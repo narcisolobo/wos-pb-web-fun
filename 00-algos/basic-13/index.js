@@ -87,19 +87,58 @@ console.log('\n');
   average.
 */
 
-/*
-  7. Array with Odds
-  returnOddsArray1To255()
-  Create an array with all the odd integers
-  between 1 and 255 (inclusive).
-*/
+/**
+ * The function `printAverageOfArray` calculates the
+ * average of the elements in an array and prints the
+ * result.
+ * @param {number[]} arr - The array of numbers to analyze.
+ */
+function printAverageOfArray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  console.log(sum / arr.length);
+}
 
-/*
-  8. Square the Values
-  squareArrayVals(arr)
-  Square each value in a given array, returning
-  that same array with changed values.
-*/
+console.log('6. printAverageOfArray');
+const nums2 = [1, 2, 3, 4];
+printAverageOfArray(nums2);
+console.log('\n');
+
+/**
+ * The function `returnOddsArray1To255` generates an
+ * array containing all odd numbers from 1 to 255.
+ * @returns {number[]}
+ */
+function returnOddsArray1To255() {
+  let oddsArr = [];
+  for (let i = 1; i <= 255; i += 2) {
+    oddsArr.push(i);
+  }
+  return oddsArr;
+}
+
+console.log('7. returnOddsArray1To255');
+console.log(returnOddsArray1To255());
+console.log('\n');
+
+/**
+ * The function `squareArrayVals` squares each element
+ * in an array and returns the modified array.
+ * @param {number[]} arr - The given array of numbers.
+ * @returns {number[]}
+ */
+function squareArrayVals(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] *= arr[i];
+  }
+  return arr;
+}
+
+console.log('8. squareArrayVals');
+console.log(squareArrayVals([1, 2, 3, 4]));
+console.log('\n');
 
 /*
   9. Greater than Y

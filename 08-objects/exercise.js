@@ -29,25 +29,62 @@ const instrumentBrands = {
   ukuleles: ['Kamaka', 'Koaloha', 'Kanilea'],
 };
 
-// Add another key to the object - "acoustic_guitars".
+// Add another key to the object - "acousticGuitars"
+// and make its value an empty array.
+instrumentBrands.acousticGuitars = [];
+console.log(instrumentBrands);
 
-// Add "Martin" and "Taylor" to the acoustic_guitars array.
+// Add "Martin" and "Taylor" to the acousticGuitars array.
+instrumentBrands.acousticGuitars.push('Martin', 'Taylor');
+console.log(instrumentBrands);
 
 // Print "Deering".
+console.log(instrumentBrands.banjos[0]);
 
 // Change "PRS" to "Paul Reed Smith".
+instrumentBrands.electricGuitars[2] = 'Paul Reed Smith';
+console.log(instrumentBrands);
 
 // Loop through the muppets array, printing each key of each nested object
+// in gives us the key
+// of gives us the value
+for (let muppet of muppets) {
+  for (let key in muppet) {
+    console.log(key);
+  }
+}
 
 // Loop through the muppets array, printing each value of each nested object
+for (let muppet of muppets) {
+  for (let key in muppet) {
+    console.log(muppet[key]);
+  }
+}
 
 // Loop through the muppets array, printing each key and value of each nested object
+for (let muppet of muppets) {
+  let output = '';
+  for (let key in muppet) {
+    output += `${key} - ${muppet[key]}, `;
+  }
 
-// Loop through the instrumentBrands object, printing the length of each nested array
+  console.log(output.slice(0, -2));
+}
 
-// Loop through the instrumentBrands object, printing each value of each nested array
+/* 
+  Expected output:
+  firstName - Kermie, lastName - the Frog
+  firstName - Miss, lastName - Piggy
+  firstName - Fozzie, lastName - Bear
+  firstName - Rowlf, lastName - the Dog
+  firstName - Gonzo, lastName - the Great
+*/
 
-// Loop through the instrumentBrands object, printing the length of each nested array, each key, and each value
+// 1. Loop through the instrumentBrands object, printing the length of each nested array
+
+// 2. Loop through the instrumentBrands object, printing each value of each nested array
+
+// 3. Loop through the instrumentBrands object, printing the length of each nested array, each key, and each value
 
 /*
   Expected output:

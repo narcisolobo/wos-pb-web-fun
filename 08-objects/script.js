@@ -25,6 +25,10 @@ const guitar = {
   brand: 'Fender',
   model: 'Stratocaster',
   numberOfStrings: 6,
+  // anonymous function
+  jam: function () {
+    console.log("We're jammin!");
+  },
 };
 
 // object constructor
@@ -78,3 +82,6 @@ console.log(guitar);
 // bracket notation use case
 const keyName = 'brand';
 console.log(guitar[keyName]);
+
+// calling the jam method
+guitar.jam();

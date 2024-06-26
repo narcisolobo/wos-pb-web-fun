@@ -19,9 +19,12 @@ console.log(muppets[1].lastName); // dot notation
 console.log(muppets[1]['lastName']); // bracket notation
 
 // Change "Kermit" to "Kermie".
+muppets[0]['firstName'] = 'kermie';
+console.log(muppets);
 
+// an object of arrays
 const instrumentBrands = {
-  electric_guitars: ['Les Paul', 'Fender', 'PRS'],
+  electricGuitars: ['Les Paul', 'Fender', 'PRS'],
   banjos: ['Deering', 'Gold Tone'],
   ukuleles: ['Kamaka', 'Koaloha', 'Kanilea'],
 };

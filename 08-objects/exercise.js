@@ -1,12 +1,22 @@
+/* 
+  Nested Data Structures
+*/
+
+// an array of objects
 const muppets = [
-  { first_name: 'Kermit', last_name: 'the Frog' },
-  { first_name: 'Miss', last_name: 'Piggy' },
-  { first_name: 'Fozzie', last_name: 'Bear' },
+  { firstName: 'Kermit', lastName: 'the Frog' },
+  { firstName: 'Miss', lastName: 'Piggy' },
+  { firstName: 'Fozzie', lastName: 'Bear' },
+  { firstName: 'Rowlf', lastName: 'the Dog' },
 ];
 
 // Add Gonzo the Great to the array.
+muppets.push({ firstName: 'Gonzo', lastName: 'the Great' });
+console.log(muppets);
 
 // Print "Piggy".
+console.log(muppets[1].lastName); // dot notation
+console.log(muppets[1]['lastName']); // bracket notation
 
 // Change "Kermit" to "Kermie".
 

@@ -54,7 +54,7 @@ function reverseArr(arr) {
     arr[end] = temp;
 
     start++;
-    end++;
+    end--;
   }
 
   return arr;

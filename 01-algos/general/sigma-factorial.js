@@ -14,8 +14,15 @@
  * @returns {number}
  */
 function sigma(num) {
-  // your code
+  let sum = 0;
+  for (let i = 1; i <= num; i++) {
+    sum += i;
+  }
+  return sum;
 }
+
+console.log(`sigma(3): ${sigma(3)}`);
+console.log(`sigma(5): ${sigma(5)}`);
 
 /*
   Factorial
@@ -34,5 +41,12 @@ function sigma(num) {
  * @returns {number}
  */
 function factorial(num) {
-  // your code
+  let sum = 1;
+  for (let i = 1; i <= num; i++) {
+    sum *= i;
+  }
+  return sum;
 }
+
+console.log(`factorial(3): ${factorial(3)}`);
+console.log(`factorial(5): ${factorial(5)}`);

@@ -94,17 +94,17 @@ function printPlaylist(playlist) {
 printPlaylist(playlist);
 
 /*
+  Difference between "in" and "of:
 
-console.log('THIS IS THE IN LOOP');
-for (let mystery in playlist) {
-  console.log(mystery);
-}
+  console.log('THIS IS THE IN LOOP');
+  for (let mystery in playlist) {
+    console.log(mystery);
+  }
 
-console.log('\n');
+  console.log('\n');
 
-console.log('THIS IS THE OF LOOP');
-for (let mystery of playlist) {
-  console.log(mystery);
-}
-  
+  console.log('THIS IS THE OF LOOP');
+  for (let mystery of playlist) {
+    console.log(mystery);
+  }
 */

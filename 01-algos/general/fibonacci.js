@@ -22,8 +22,25 @@
    0  1  2  3  4  5  6  7   8   9
 */
 
-function fibonacci(idx) {
-  const fib = [0, 1];
-  // loop starts at index 2
-  // inside the loop, push to fib array
+// iterative solution
+function fib(idx) {
+  const arr = [0, 1];
+  for (let i = 2; i <= idx; i++) {
+    arr.push(arr[i - 1] + arr[i - 2]);
+  }
+  return arr[idx];
 }
+console.log(fib(8));
+
+// recursive solution
+// 3 ingredients for a recursive function
+// 1. base case (escape clause)
+// 2. progression towards the base case
+// 3. recursive call
+
+function rFib(idx) {
+  if (idx < 2) return idx;
+  return rFib(idx - 1) + rFib(idx - 2);
+}
+
+console.log(rFib(8));

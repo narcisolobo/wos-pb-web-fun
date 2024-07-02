@@ -17,8 +17,16 @@
  * @returns {any[]}
  */
 function pushFront(arr, val) {
-  // your code here
+  for (let i = arr.length; i > 0; i--) {
+    arr[i] = arr[i - 1];
+  }
+  arr[0] = val;
+  return arr;
 }
+
+const val = 5;
+const myArr = [1, 2, 3, 4];
+console.log(pushFront(myArr, val));
 
 /* 
   PopFront
@@ -39,5 +47,21 @@ function pushFront(arr, val) {
  * @returns {any}
  */
 function popFront(arr) {
-  // your code here
+  if (arr.length === 0) {
+    console.log('The array is empty.');
+    return;
+  }
+
+  const popped = arr[0];
+  for (let i = 0; i < arr.length - 1; i++) {
+    arr[i] = arr[i + 1];
+  }
+
+  console.log(arr);
+
+  arr.pop();
+  console.log(arr);
+  return popped;
 }
+
+console.log(popFront([1, 2, 3, 4]));

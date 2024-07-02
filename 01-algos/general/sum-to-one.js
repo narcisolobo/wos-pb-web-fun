@@ -19,5 +19,22 @@
  * @returns {number}
  */
 function sumToOne(num) {
-  // your code here
+  if (String(num).length === 1) {
+    return num;
+  }
+
+  const nums = String(num)
+    .split('')
+    .map((char) => Number(char));
+
+  let sum = 0;
+  for (const num of nums) {
+    sum += num;
+  }
+  return sumToOne(sum);
 }
+
+console.log(sumToOne(5));
+console.log(sumToOne(15));
+console.log(sumToOne(20));
+console.log(sumToOne(849));

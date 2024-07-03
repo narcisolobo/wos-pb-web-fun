@@ -1,8 +1,11 @@
 /* 
   insertAt
   Given an array, index, and additional value, ​insert
-  the value into the array a​ t the given index. Do this
-  without using built-in array methods.
+  the value into the array a​t the given index. Do this
+  without using built-in array methods. Return the
+  array.
+
+  This means you, Rayven!
   
   You can think of ​pushFront(arr, val)​ as equivalent to
   insertAt(arr, 0, val)​.

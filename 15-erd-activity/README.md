@@ -14,7 +14,7 @@ The class will be split randomly into three teams.
   - Library management system
   - Online store
   - Social media platform
-  - Task management tool
+  - Project management tool
 - Outline the main features and functionality of your application.
 
 **Identify Entities and Attributes (20-30 minutes)**

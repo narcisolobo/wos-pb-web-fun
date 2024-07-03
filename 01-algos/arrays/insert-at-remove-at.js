@@ -12,8 +12,17 @@
 */
 
 function insertAt(arr, idx, val) {
-  // your code here
+  for (let i = arr.length; i > idx; i--) {
+    arr[i] = arr[i - 1];
+  }
+  arr[idx] = val;
+  return arr;
 }
+
+const idx = 2;
+const val = 6;
+const myArr = [1, 2, 3, 4, 5];
+console.log(insertAt(myArr, idx, val));
 
 /* 
   removeAt
@@ -25,5 +34,19 @@ function insertAt(arr, idx, val) {
 */
 
 function removeAt(arr, idx) {
-  // your code here
+  if (arr.length === 0) {
+    console.log('The array is empty.');
+    return;
+  }
+
+  const popped = arr[idx];
+  for (let i = idx; i < arr.length - 1; i++) {
+    arr[i] = arr[i + 1];
+  }
+
+  arr.pop();
+  console.log(arr);
+  return popped;
 }
+
+console.log(removeAt([1, 2, 3, 4, 5], 2));

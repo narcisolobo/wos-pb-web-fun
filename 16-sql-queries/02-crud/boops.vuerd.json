@@ -3,8 +3,8 @@
     "version": "2.2.13",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -344.13631726319323,
-    "scrollLeft": -470.75729999999993,
+    "scrollTop": -175.18931605553698,
+    "scrollLeft": -295.01441363604516,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "",
-    "canvasType": "ERD",
+    "canvasType": "@vuerd/builtin-sql-ddl",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -211,9 +211,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 107,
-          "top": 7,
-          "zIndex": 1,
+          "left": 208.25,
+          "top": 38.25,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 60
         },
@@ -410,9 +410,9 @@
           }
         ],
         "ui": {
-          "active": true,
-          "left": 336.8694,
-          "top": 421.6504,
+          "active": false,
+          "left": 198.1194,
+          "top": 399.1504,
           "zIndex": 5,
           "widthName": 60,
           "widthComment": 60
@@ -495,10 +495,10 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 1044.7087,
-          "top": 253.9141,
-          "zIndex": 3,
+          "active": true,
+          "left": 1042.2087,
+          "top": 276.4141,
+          "zIndex": 7,
           "widthName": 60,
           "widthComment": 60
         },
@@ -522,8 +522,8 @@
           "columnIds": [
             "44de2867-2d34-4268-9a23-9642f99ebbeb"
           ],
-          "x": 465.607421875,
-          "y": 219.5,
+          "x": 566.857421875,
+          "y": 250.75,
           "direction": "bottom"
         },
         "end": {
@@ -531,8 +531,8 @@
           "columnIds": [
             "64e383de-775f-467d-9514-5e087962d064"
           ],
-          "x": 695.476821875,
-          "y": 421.6504,
+          "x": 556.726821875,
+          "y": 399.1504,
           "direction": "top"
         },
         "constraintName": "fk_users_to_pets",
@@ -548,8 +548,8 @@
           "columnIds": [
             "44de2867-2d34-4268-9a23-9642f99ebbeb"
           ],
-          "x": 824.21484375,
-          "y": 113.25,
+          "x": 925.46484375,
+          "y": 144.5,
           "direction": "right"
         },
         "end": {
@@ -557,8 +557,8 @@
           "columnIds": [
             "f0ceb23e-35da-4793-8f3f-3b1735c48b15"
           ],
-          "x": 1044.7087,
-          "y": 286.53909999999996,
+          "x": 1042.2087,
+          "y": 309.0391,
           "direction": "left"
         },
         "constraintName": "fk_users_to_boops",
@@ -574,8 +574,8 @@
           "columnIds": [
             "73b6e38c-a4a0-42d5-a65f-f619b5c8ab6d"
           ],
-          "x": 1054.08424375,
-          "y": 538.1504,
+          "x": 915.33424375,
+          "y": 515.6504,
           "direction": "right"
         },
         "end": {
@@ -583,8 +583,8 @@
           "columnIds": [
             "067e5c9b-efcd-45ea-b6bb-c8556efe4e0a"
           ],
-          "x": 1044.7087,
-          "y": 351.78909999999996,
+          "x": 1042.2087,
+          "y": 374.2891,
           "direction": "left"
         },
         "constraintName": "fk_pets_to_boops",

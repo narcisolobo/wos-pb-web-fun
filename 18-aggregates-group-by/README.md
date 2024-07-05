@@ -60,20 +60,21 @@ GROUP BY user_id;
 We can also use `GROUP BY` in conjunction with `JOIN` to get more detailed results. For example, if we want to know the number of pets each user has along with their names, we can join the `users` and `pets` tables.
 
 ```sql
-SELECT users.name, COUNT(pets.pet_id) AS number_of_pets
+SELECT users.first_name, COUNT(pets.id) AS number_of_pets
 FROM users
 LEFT JOIN pets ON users.id = pets.user_id
-GROUP BY users.name;
+GROUP BY users.first_name;
 ```
 
 This query will return the name of each user and the number of pets they have.
 
 ### Example 5: Maximum and Minimum Ages
 
-Suppose we want to find the highest and lowest ages of each pet.
+Suppose we want to find the highest and lowest ages of all pets.
 
 ```sql
-SELECT pet_id, MAX(age) AS oldest_age, MIN(age) AS youngest_age
-FROM pets
-GROUP BY pet_id;
+SELECT
+MAX(age) AS oldest_age,
+MIN(age) AS youngest_age
+FROM pets;
 ```

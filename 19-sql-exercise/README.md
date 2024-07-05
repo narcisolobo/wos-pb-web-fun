@@ -17,11 +17,8 @@ Imagine you are building an application to manage a vinyl record collection. Thi
 
 ## Getting Started
 
-1. **Create the Database**
-   In MySQL Workbench, go to `File > Open SQL Script...` and open the `vinyl-countdown.sql` file. Execute the file to create the database and tables.
-
-2. **Seed the Database**
-    In MySQL Workbench, go to `File > Open SQL Script...` and open the `seed.sql` file. Execute the file to seed the database with collectors, records, and ratings.
+1. **Create and Seed the Database**
+   In MySQL Workbench, go to `File > Open SQL Script...` and open the `vinyl-countdown.sql` file. Execute the file to create the database and tables and seed with data.
 
 ## Exercise Tasks
 
@@ -34,7 +31,7 @@ Imagine you are building an application to manage a vinyl record collection. Thi
     - Select all collectors, records by a specific collector, and ratings for a specific record.
 
 3. **Update Operations**
-    - Update a collector's email and a record's genre.
+    - Update a collector's email and a record's title.
 
 4. **Delete Operations**
     - Delete a rating and a record.

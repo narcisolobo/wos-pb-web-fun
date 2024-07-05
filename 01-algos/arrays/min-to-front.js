@@ -21,7 +21,30 @@ const expected3 = [0, 5, 1, 2, 3, 0];
  * @returns {number[]} The given arr after the min has been moved to front.
  */
 function minToFront(nums) {
-  // code here
+  if (nums.length == 0) {
+    return nums;
+  }
+
+  let min = nums[0];
+  let minIdx = 0;
+
+  // Find the first occurrence of the minimum value
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] < min) {
+      min = nums[i];
+      minIdx = i;
+    }
+  }
+
+  // Shift elements to the right and move the minimum value to the front
+  if (minIdx !== 0) {
+    for (let i = minIdx; i > 0; i--) {
+      nums[i] = nums[i - 1];
+    }
+    nums[0] = min;
+  }
+
+  return nums;
 }
 
 // Tests

@@ -42,46 +42,15 @@ Imagine you are building an application to manage a vinyl record collection. Thi
 ### Part 2: JOIN Statements
 
 1. **Join Collectors and Records**
-    ```sql
-    SELECT Collectors.name, Records.title, Records.artist
-    FROM Collectors
-    JOIN Records ON Collectors.collector_id = Records.collector_id;
-    ```
 
 2. **Join Records and Ratings**
-    ```sql
-    SELECT Records.title, Ratings.rating, Ratings.review
-    FROM Records
-    JOIN Ratings ON Records.record_id = Ratings.record_id;
-    ```
 
 3. **Join All Three Tables**
-    ```sql
-    SELECT Collectors.name, Records.title, Ratings.rating, Ratings.review
-    FROM Collectors
-    JOIN Records ON Collectors.collector_id = Records.collector_id
-    JOIN Ratings ON Records.record_id = Ratings.record_id;
-    ```
 
 ### Part 3: Aggregate Functions with GROUP BY
 
 1. **Average Rating for Each Record**
-    ```sql
-    SELECT record_id, AVG(rating) AS average_rating
-    FROM Ratings
-    GROUP BY record_id;
-    ```
 
 2. **Count of Records Uploaded by Each Collector**
-    ```sql
-    SELECT collector_id, COUNT(record_id) AS total_records
-    FROM Records
-    GROUP BY collector_id;
-    ```
 
 3. **Count of Ratings Given by Each Collector**
-    ```sql
-    SELECT collector_id, COUNT(rating_id) AS total_ratings
-    FROM Ratings
-    GROUP BY collector_id;
-    ```

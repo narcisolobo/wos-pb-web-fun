@@ -44,7 +44,27 @@ const expected8 = null;
  *    The ? in front means it's nullable.
  */
 function secondLargest(nums) {
-  // your code here
+  if (nums.length < 2) {
+    console.log('Array must have at least two values.');
+  }
+
+  let first = -Infinity,
+    second = -Infinity;
+
+  for (const num of nums) {
+    if (num > first) {
+      second = first;
+      first = num;
+    }
+
+    if (num > second && num !== first) {
+      second = num;
+    }
+  }
+
+  if (second === -Infinity) return null;
+
+  return second;
 }
 
 // Tests

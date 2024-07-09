@@ -37,3 +37,12 @@ Inline elements are suitable for small parts of text or elements that should app
 Block elements are ideal for larger sections, such as paragraphs or div containers, which are block by default.
 
 Inline-block elements are useful when you want elements to flow inline but still have some block-level properties.
+
+## Plotting Our Blocks Hint
+It can be done in 10 additional lines of CSS code.
+
+You will only need four properties:
+- display: inline-block
+- vertical-align: top
+- margin (top, bottom, right, left)
+- padding

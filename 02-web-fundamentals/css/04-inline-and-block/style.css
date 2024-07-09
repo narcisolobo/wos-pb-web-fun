@@ -1,0 +1,37 @@
+a {
+  color: aqua;
+}
+
+body {
+  background-color: #252525;
+  color: rgb(209, 209, 209);
+}
+
+main,
+aside {
+  padding: 1.5rem;
+  /* often found as a pair */
+  display: inline-block;
+  vertical-align: top;
+
+  width: 44%;
+}
+
+aside {
+  background-color: darkgreen;
+}
+
+main {
+  background-color: darkblue;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  border: 1px solid black;
+}
+
+.image {
+  width: 200px;
+}

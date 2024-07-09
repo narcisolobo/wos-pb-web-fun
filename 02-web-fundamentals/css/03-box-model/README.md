@@ -13,7 +13,7 @@ Each of these components contributes to the overall sizing and spacing of an ele
 ### Content
 The content area is where the actual content of the element, such as text or images, is displayed.
 
-It is defined by the width and height properties.
+Block-level element contents are defined by the width and height properties. In the case of inline elements, it is defined ny the width of the element.
 
 ### Padding
 Padding is the space between the content and the element's border.

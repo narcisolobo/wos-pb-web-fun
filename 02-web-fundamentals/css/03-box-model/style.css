@@ -1,0 +1,51 @@
+/* CSS Custom Properties (CSS Variables) */
+:root {
+  --text-foreground: rgb(209, 209, 209);
+}
+
+* {
+  box-sizing: border-box;
+  /*
+    this property setting tells the browser
+    that padding and border should eat from
+    the content rather than add to it.
+  */
+}
+
+html {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: #252525;
+  color: var(--text-foreground);
+}
+
+header {
+  background-color: #353535;
+}
+
+header,
+main {
+  padding: 1rem 1.5rem;
+}
+
+.title {
+  margin: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  margin: 1.5rem auto;
+  border: 2px solid var(--text-foreground);
+  padding: 1rem;
+}
+
+span {
+  /* this has no effect on inline elements */
+  height: 1000px;
+  width: 1000px;
+}

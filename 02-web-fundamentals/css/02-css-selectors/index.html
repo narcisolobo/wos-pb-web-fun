@@ -3,25 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>CSS Selectors</title>
   </head>
   <body>
-    <header id="hero">
-      <h1><a href="#hero">CSS Selectors</a></h1>
+    <header id="hero" class="padding-large">
+      <h1>
+        <a href="#hero" class="title">CSS
+          <span class="highlight">Selectors</span></a>
+      </h1>
       <h2>Give your site some swag.</h2>
       <nav>
         <ul>
           <li><a href="#intro">Introduction</a></li>
-          <li><a href="#simple">Simple Selectors</a></li>
-          <li><a href="#combinator">Combinator Selectors</a></li>
-          <li><a href="#pseudo-class">Pseudo-Class Selectors</a></li>
-          <li><a href="#pseudo-element">Pseudo-Element Selectors</a></li>
-          <li><a href="#attribute">Attribute Selectors</a></li>
+          <li><a href="#simple">Simple</a></li>
+          <li><a href="#combinator">Combinator</a></li>
+          <li><a href="#pseudo-class">Pseudo-Class</a></li>
+          <li><a href="#pseudo-element">Pseudo-Element</a></li>
+          <li><a href="#attribute">Attribute</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="intro">
+      <section id="intro" class="padding-large">
         <h3>CSS Selectors</h3>
         <p>A CSS selector selects the HTML element(s) you want to style.</p>
         <p>
@@ -37,7 +42,7 @@
           <li><a href="#attribute">Attribute Selectors</a></li>
         </ul>
       </section>
-      <section id="simple">
+      <section id="simple" class="padding-large">
         <h3>Simple Selectors</h3>
         <p>
           CSS simple selectors select elements based on element name, id, or
@@ -110,7 +115,7 @@
           </li>
         </ul>
       </section>
-      <section id="combinator">
+      <section id="combinator" class="padding-large">
         <h3>Combinator Selectors</h3>
         <p>
           Combinator selectors select elements based on a specific relationship
@@ -164,7 +169,7 @@
           </li>
         </ul>
       </section>
-      <section id="pseudo-class">
+      <section id="pseudo-class" class="padding-large">
         <h3>Pseudo-Class Selectors</h3>
         <p>Pseudo-class selectors select elements based on a certain state.</p>
         <p>For example, it can be used to:</p>
@@ -175,7 +180,7 @@
           <li>Pseudo-classes can be combined with HTML classes</li>
         </ul>
       </section>
-      <section id="pseudo-element">
+      <section id="pseudo-element" class="padding-large">
         <h3>Pseudo-Element Selectors</h3>
         <p>Pseudo-element selectors select a part of an element.</p>
         <p>For example, it can be used to:</p>
@@ -184,7 +189,7 @@
           <li>Insert content before, or after, the content of an element</li>
         </ul>
       </section>
-      <section id="attribute">
+      <section id="attribute" class="padding-large">
         <h3>Attribute Selectors</h3>
         <p>
           Attribute selectors select elements based on an attribute or attribute

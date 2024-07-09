@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+  </head>
+  <body>
+    <header id="hero">
+      <h1><a href="#hero">CSS Selectors</a></h1>
+      <h2>Give your site some swag.</h2>
+      <nav>
+        <ul>
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#simple">Simple Selectors</a></li>
+          <li><a href="#combinator">Combinator Selectors</a></li>
+          <li><a href="#pseudo-class">Pseudo-Class Selectors</a></li>
+          <li><a href="#pseudo-element">Pseudo-Element Selectors</a></li>
+          <li><a href="#attribute">Attribute Selectors</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="intro">
+        <h3>CSS Selectors</h3>
+        <p>A CSS selector selects the HTML element(s) you want to style.</p>
+        <p>
+          CSS selectors are used to "find" (or select) the HTML elements you
+          want to style.
+        </p>
+        <p>We can divide CSS selectors into five categories:</p>
+        <ul>
+          <li><a href="#simple">Simple Selectors</a></li>
+          <li><a href="#combinator">Combinator Selectors</a></li>
+          <li><a href="#pseudo-class">Pseudo-Class Selectors</a></li>
+          <li><a href="#pseudo-element">Pseudo-Element Selectors</a></li>
+          <li><a href="#attribute">Attribute Selectors</a></li>
+        </ul>
+      </section>
+      <section id="simple">
+        <h3>Simple Selectors</h3>
+        <p>
+          CSS simple selectors select elements based on element name, id, or
+          class.
+        </p>
+        <ul>
+          <li>
+            <strong>Element selectors</strong>
+            <ul>
+              <li>
+                The element selector selects HTML elements based on the element
+                name.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>ID selectors</strong>
+            <ul>
+              <li>
+                The id selector uses the id attribute of an HTML element to
+                select a specific element.
+              </li>
+              <li>
+                The id of an element is unique within a page, so the id selector
+                is used to select one unique element!
+              </li>
+              <li>
+                To select an element with a specific id, write a hash
+                (<code>#</code>) character, followed by the id of the element.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Class selectors</strong>
+            <ul>
+              <li>
+                The class selector selects HTML elements with a specific class
+                attribute.
+              </li>
+              <li>
+                To select elements with a specific class, write a period
+                (<code>.</code>) character, followed by the class name.
+              </li>
+              <li>
+                You can also specify that only specific HTML elements should be
+                affected by a class. The selector <code>p.center</code> selects
+                only <code>p</code> elements with the
+                <code>.center</code> class.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>The universal selector</strong>
+            <ul>
+              <li>
+                The universal selector (<code>*</code>) selects all HTML
+                elements on the page.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>The grouping selector</strong>
+            <ul>
+              <li>
+                The grouping selector selects all the HTML elements with the
+                same style definitions.
+              </li>
+              <li>To group selectors, separate each selector with a comma.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="combinator">
+        <h3>Combinator Selectors</h3>
+        <p>
+          Combinator selectors select elements based on a specific relationship
+          between them.
+        </p>
+        <p>
+          A CSS selector can contain more than one simple selector. Between the
+          simple selectors, we can include a combinator.
+        </p>
+        <p>There are four different combinators in CSS:</p>
+        <ul>
+          <li>
+            <strong>Descendant Selector (space)</strong>
+            <ul>
+              <li>
+                The descendant selector matches all elements that are
+                descendants of a specified element.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Child Selector (<code>></code>)</strong>
+            <ul>
+              <li>
+                The child selector selects all elements that are the children of
+                a specified element.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Adjacent Sibling Selector (<code>+</code>)</strong>
+            <ul>
+              <li>
+                The adjacent sibling selector is used to select an element that
+                is directly after another specific element.
+              </li>
+              <li>
+                Sibling elements must have the same parent element, and
+                "adjacent" means "immediately following".
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>General Sibling Selector (<code>~</code>)</strong>
+            <ul>
+              <li>
+                The general sibling selector selects all elements that are next
+                siblings of a specified element.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="pseudo-class">
+        <h3>Pseudo-Class Selectors</h3>
+        <p>Pseudo-class selectors select elements based on a certain state.</p>
+        <p>For example, it can be used to:</p>
+        <ul>
+          <li>Style an element when a user mouses over it</li>
+          <li>Style visited and unvisited links differently</li>
+          <li>Style an element when it gets focus</li>
+          <li>Pseudo-classes can be combined with HTML classes</li>
+        </ul>
+      </section>
+      <section id="pseudo-element">
+        <h3>Pseudo-Element Selectors</h3>
+        <p>Pseudo-element selectors select a part of an element.</p>
+        <p>For example, it can be used to:</p>
+        <ul>
+          <li>Style the first letter, or line, of an element</li>
+          <li>Insert content before, or after, the content of an element</li>
+        </ul>
+      </section>
+      <section id="attribute">
+        <h3>Attribute Selectors</h3>
+        <p>
+          Attribute selectors select elements based on an attribute or attribute
+          value.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

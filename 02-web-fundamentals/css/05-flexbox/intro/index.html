@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro to Flexbox</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="container">Intro to Flexbox</h1>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <h2>The Flexbox System has two sets of properties.</h2>
+        <ol>
+          <li>Flex container</li>
+          <li>Flex items</li>
+        </ol>
+        <p>
+          <strong>
+            When we assign an element's display property to flex, we turn that
+            element into a flex container and all direct children become flex
+            items.
+          </strong>
+        </p>
+        <h2>"The parent tells the children how to behave."</h2>
+        <p>
+          <strong
+            >Flex items are only as wide as they need to be (by
+            default).</strong
+          >
+        </p>
+        <h3>Flexbox is a one-dimensional system.</h3>
+      </section>
+      <h3>Important Flex Container Properties:</h3>
+      <ul>
+        <li><code>display: flex;</code></li>
+        <li><code>flex-direction: row (default) || column</code></li>
+        <li>
+          <code>justify-content:</code>
+          <ul>
+            <li>Governs items on the main axis (x-axis or row by default)</li>
+            <li><code>flex-start</code> (default)</li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+            <li><code>space-between</code></li>
+          </ul>
+        </li>
+        <li>
+          <code>align-items:</code>
+          <ul>
+            <li>
+              Governs items on the cross axis (y-axis or column by default)
+            </li>
+            <li><code>stretch (default)</code></li>
+            <li><code>flex-start</code></li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+          </ul>
+        </li>
+        <li><code>gap: 20px (for example)</code></li>
+      </ul>
+      <h3>Important Flex Item Properties:</h3>
+      <ul>
+        <li>
+          <code>align-self:</code>
+          <ul>
+            <li>Allows a flex item to <em>misbehave.</em></li>
+            <li><code>stretch</code></li>
+            <li><code>flex-start</code></li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+          </ul>
+        </li>
+        <li>
+          <code>flex:</code>
+          <ul>
+            <li>
+              A shorthand property that sets more than one property at once.
+            </li>
+            <li>
+              Defines how many pieces of the pie a child is allowed to eat.
+            </li>
+            <li>Its value is a unit-less number.</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="parent">
+        <div class="child w-200"></div>
+        <div class="child w-200"></div>
+        <div class="child w-200 misbehave"></div>
+        <div class="child w-200"></div>
+        <div class="child w-200"></div>
+      </div>
+      <h3>The Shorthand <code>flex</code> Property:</h3>
+      <div class="parent">
+        <div class="child flex-2"></div>
+        <div class="child flex-1"></div>
+        <div class="child flex-3"></div>
+      </div>
+    </main>
+  </body>
+</html>

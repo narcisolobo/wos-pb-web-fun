@@ -1,0 +1,64 @@
+html {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  padding-bottom: 40rem;
+}
+
+code {
+  font-family: monospace;
+}
+
+header {
+  padding: 1rem 0;
+  background-color: #252525;
+  color: yellow;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.parent {
+  background-color: chocolate;
+  min-height: 250px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.child {
+  background-color: darkseagreen;
+  min-height: 200px;
+  border: 2px solid black;
+}
+
+.misbehave {
+  align-self: flex-start;
+}
+
+.flex-0 {
+  flex: 0;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}

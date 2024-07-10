@@ -27,7 +27,27 @@ const expected3 = false;
  * @returns {boolean}
  */
 function bracesValid(inputStr) {
-  // your code here
+  const bracesMap = {
+    ')': '(',
+    ']': '[',
+    '}': '{',
+  };
+
+  const bracesStack = [];
+
+  for (const char of inputStr) {
+    if (Object.values(bracesMap).includes(char)) {
+      // If char is an opening brace, push to stack
+      bracesStack.push(char);
+    } else if (bracesMap.hasOwnProperty(char)) {
+      // If char is a closing brace, check if it matches the last opening brace
+      if (bracesStack.length === 0 || bracesStack.pop() !== bracesMap[char]) {
+        return false;
+      }
+    }
+  }
+
+  return bracesStack.length === 0;
 }
 
 // tests

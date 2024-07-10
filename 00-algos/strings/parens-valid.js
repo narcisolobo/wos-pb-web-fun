@@ -26,7 +26,20 @@ const expected3 = false;
  * @returns {boolean}
  */
 function parensValid(inputStr) {
-  // your code here
+  let parensCount = 0;
+
+  for (const char of inputStr) {
+    if (char === ')') {
+      if (parensCount === 0) {
+        return false;
+      }
+      parensCount--;
+    } else if (char === '(') {
+      parensCount++;
+    }
+  }
+
+  return parensCount === 0;
 }
 
 // tests

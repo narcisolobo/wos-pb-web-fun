@@ -18,7 +18,27 @@ const expected2 = 'aaabbccccccccccccdddddddddd';
  * @returns {string} The given str decoded / expanded.
  */
 function decodeStr(str) {
-  // your code here
+  let result = '';
+  let i = 0;
+
+  while (i < str.length) {
+    let char = str[i];
+    i++;
+
+    let numStr = '';
+
+    // while we're inside the string
+    // and the current char is a number
+    while (i < str.length && !isNaN(str[i])) {
+      numStr += str[i];
+      i++;
+    }
+
+    let num = Number(numStr);
+    result += char.repeat(num);
+  }
+
+  return result;
 }
 
 const result1 = decodeStr(str1);

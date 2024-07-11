@@ -34,7 +34,26 @@ const expected4 = 'bbcc';
  * @returns {string} The given string encoded.
  */
 function encodeStr(str) {
-  // your code here
+  const freqTable = {};
+
+  for (const char of str) {
+    if (freqTable.hasOwnProperty(char)) {
+      freqTable[char]++;
+    } else {
+      freqTable[char] = 1;
+    }
+  }
+
+  let output = '';
+  for (const key in freqTable) {
+    output += `${key}${freqTable[key]}`;
+  }
+
+  if (output.length >= str.length) {
+    return str;
+  }
+
+  return output;
 }
 
 const result1 = encodeStr(str1);

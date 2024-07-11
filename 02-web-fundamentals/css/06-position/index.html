@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The CSS Position Property</title>
+  </head>
+  <body>
+    <header class="container">
+      <h2>WOS Web Fundamentals - Week 3, Day 4</h2>
+    </header>
+    <nav class="nav">
+      <div class="container">
+        <h1>The CSS Position Property</h1>
+      </div>
+    </nav>
+    <main class="container">
+      <blockquote>
+        The first rule of the position property:<br />
+        <em>Do not abuse the position property.</em>
+      </blockquote>
+      <p class="topic">
+        When first learning about the possibilities of the position property, it
+        can be tempting to use it all the time. The position property allows us
+        to place any element anywhere we like.
+      </p>
+      <p>
+        Although this may seem like the answer to our prayers, we should avoid
+        using position whenever possible. We should instead opt for cleaner,
+        more maintainable code. Flex your containers instead!
+      </p>
+      <p>
+        There are five possible values for the position property. These are (in
+        no particular order):
+      </p>
+      <ul class="list">
+        <li>
+          <code>position: static</code>
+        </li>
+        <li>
+          <code>position: relative</code>
+        </li>
+        <li>
+          <code>position: absolute</code>
+        </li>
+        <li>
+          <code>position: fixed</code>
+        </li>
+        <li>
+          <code>position: sticky</code>
+        </li>
+      </ul>
+      <p class="topic">
+        Position: Static<br />
+        This value is the default value for the position property.
+      </p>
+      <div class="box p-static"></div>
+      <p class="topic">
+        Position: Relative<br />
+        This value positions the element <em>relative</em> to its normal
+        position in the document flow.
+      </p>
+      <div class="box p-relative"></div>
+      <p class="topic">
+        Position: Absolute<br />
+        This value positions the element relative to its
+        <em>closest positioned ancestor.</em>
+      </p>
+      <p>
+        An absolutely positioned element <strong>must</strong> have a relatively
+        positioned parent.
+      </p>
+      <div class="parent">
+        <div class="circle p-absolute"></div>
+      </div>
+      <p class="topic">
+        Position: fixed<br />
+        The element is positioned relative to the
+        <strong>browser window.</strong>
+      </p>
+      <p class="topic">
+        Position: Sticky<br />
+        The element <strong>toggles between fixed and relative</strong>,
+        dependant on the client's scroll position.
+      </p>
+      <div class="cookie">
+        <strong>COOKIE</strong>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          eligendi aspernatur perferendis explicabo! Modi quas nemo, veniam ad
+          placeat autem quo et eligendi blanditiis. Rerum quisquam fugiat
+          dolores odit. Nihil.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

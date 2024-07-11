@@ -1,0 +1,45 @@
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: red;
+  padding: 5px;
+}
+
+header {
+  background-color: yellow;
+  min-height: 50px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  background-color: lightgreen;
+  min-height: 200px;
+  padding: 5px;
+}
+
+div.content {
+  align-items: stretch;
+}
+
+nav {
+  background-color: lightblue;
+  min-height: 200px;
+  padding: 1.5rem;
+}
+
+main {
+  background-color: pink;
+  min-height: 200px;
+  flex: 2;
+}
+
+aside {
+  background-color: violet;
+  min-height: 200px;
+  flex: 1;
+}

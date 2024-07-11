@@ -21,6 +21,10 @@ body {
   padding-bottom: 40rem;
 }
 
+main {
+  position: static;
+}
+
 .nav {
   background-color: var(--light);
   color: var(--dark);
@@ -57,7 +61,7 @@ ul {
 }
 
 li {
-  list-style-type: '😀';
+  list-style-type: '👉🏽';
   padding-inline-start: 1ch;
 }
 
@@ -92,4 +96,44 @@ li {
   background-color: dimgray;
   color: white;
   padding: 20px;
+}
+
+.p-static {
+  /*
+    static positioned elements cannot
+    be moved with top, right, bottom, or left
+  */
+
+  position: static;
+  left: 300px;
+}
+
+.p-relative {
+  position: relative;
+  left: 50px;
+}
+
+.parent {
+  width: 200px;
+  height: 200px;
+  background-color: darkviolet;
+  position: relative;
+  margin: 0 auto;
+}
+
+.p-absolute {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.cookie {
+  position: fixed;
+  bottom: 0;
+}
+
+.p-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }

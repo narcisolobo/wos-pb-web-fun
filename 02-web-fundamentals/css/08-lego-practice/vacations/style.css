@@ -1,0 +1,45 @@
+.container {
+  background-color: rebeccapurple;
+  min-height: 100px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  background-color: lightblue;
+  min-height: 100px;
+  flex: 3;
+}
+
+aside {
+  background-color: lightcoral;
+  min-height: 100px;
+  flex: 2;
+}
+
+.primary {
+  background-color: navy;
+  min-height: 100px;
+  flex: 2;
+}
+
+.secondary {
+  background-color: green;
+  min-height: 100px;
+  flex: 1;
+}
+
+.card-square {
+  max-height: 200px;
+  overflow: hidden;
+}

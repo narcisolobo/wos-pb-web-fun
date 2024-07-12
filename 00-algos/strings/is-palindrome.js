@@ -27,7 +27,18 @@ const expected4 = false;
  * @returns {boolean} Whether the given str is a palindrome or not.
  */
 function isPalindrome(inputStr) {
-  // your code here
+  let start = 0;
+  let end = inputStr.length - 1;
+
+  while (start < end) {
+    if (inputStr[start] !== inputStr[end]) {
+      return false;
+    }
+    start++;
+    end--;
+  }
+
+  return true;
 }
 
 const result1 = isPalindrome(str1);

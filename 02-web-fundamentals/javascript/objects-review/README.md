@@ -11,7 +11,7 @@ A guitar can also make music, it can be tuned, you can increase/decrease the vol
 
 Therefore, a JavaScript object is a collection of properties and methods.
 
-## Creating an Array
+## Creating an Object
 As a refresher, let's go over how we can create an object in JavaScript using "object literal notation".
 
 ```js

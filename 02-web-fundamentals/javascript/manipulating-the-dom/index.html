@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Manipulating the DOM</title>
+  </head>
+  <body>
+    <h1 onmouseover="handleMouseOver(this)">Manipulating the DOM</h1>
+    <button onclick="handleClick(this)">Click me!</button>
+    <button onclick="changeText(this)">Click me!</button>
+
+    <div
+      class="box"
+      onmouseover="handleMouseOver(this)"
+      onmouseout="handleMouseOut(this)"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

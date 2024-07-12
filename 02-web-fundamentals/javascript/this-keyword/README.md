@@ -49,3 +49,5 @@ Notice we use the `this` keyword inside the `person` object's `sayHello` method 
 
 We got it for free!
 
+Inside a function, the value of `this` depends on how the function is called. Think about `this` as a hidden parameter of a function — just like the parameters declared in the function definition, `this` is a binding that the language creates for you when the function body is evaluated.
+

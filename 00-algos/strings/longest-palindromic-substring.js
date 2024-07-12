@@ -1,8 +1,10 @@
-/* 
-  Longest Palindrome
+const { isPalindrome } = require('./is-palindrome');
 
-  For this challenge, we will look not only at the entire string provided,
-  but also at the substrings within it.
+/* 
+  Longest Palindromic Substring
+
+  For this challenge, we will look not only at the
+  entire string provided, but also at the substrings within it.
   Return the longest palindromic substring. 
 
   Strings longer or shorter than complete words are OK.
@@ -10,8 +12,6 @@
   All the substrings of "abc" are:
   a, ab, abc, b, bc, c
 */
-
-const { isPalindrome } = require('./is-palindrome');
 
 const str1 = 'what up, daddy-o?';
 const expected1 = 'dad';
@@ -37,6 +37,7 @@ const expected5 = '567765';
  */
 function longestPalindromicSubstring(inputStr) {
   // your code here
+  // nested loops
 }
 
 const result1 = longestPalindromicSubstring(str1);

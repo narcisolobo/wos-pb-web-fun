@@ -1,0 +1,32 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.card {
+  width: 500px;
+  border: 2px solid rgb(182, 182, 182);
+  margin: 0 auto;
+}
+
+.card-header {
+  min-height: 72px;
+  background-color: darkslateblue;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-footer {
+  min-height: 20px;
+  background-color: darkslateblue;
+}
+
+.profile-pic {
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+  left: 20px;
+}

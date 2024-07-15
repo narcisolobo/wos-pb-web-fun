@@ -33,5 +33,18 @@ const expected2 = {};
  * @returns {Object} The object with the given keys and values.
  */
 function zipArraysIntoMap(keys, values) {
-  // your code here
+  const result = {};
+  for (let i = 0; i < keys.length; i++) {
+    result[keys[i]] = values[i];
+  }
+
+  return result;
 }
+
+const result1 = zipArraysIntoMap(keys1, vals1);
+console.log('result1:', result1);
+console.log('expected1:', expected1);
+
+const result2 = zipArraysIntoMap(keys2, vals2);
+console.log('result2:', result2);
+console.log('expected2:', expected2);

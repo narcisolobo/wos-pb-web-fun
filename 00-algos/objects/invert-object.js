@@ -30,5 +30,15 @@ const expected1 = {
  * @return The given object with key value pairs inverted.
  */
 function invertObj(obj) {
-  // your code here
+  const result = {};
+
+  for (const key in obj) {
+    result[obj[key]] = key;
+  }
+
+  return result;
 }
+
+const result1 = invertObj(obj1);
+console.log('result1:', result1);
+console.log('expected1:', expected1);

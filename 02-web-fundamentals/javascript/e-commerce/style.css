@@ -1,0 +1,105 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+
+html {
+  font-family: system-ui, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+/* utility classes start */
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  background-color: #252525;
+  padding: 1rem 1.5rem;
+}
+
+.card-header > h2 {
+  color: rgb(230, 230, 230);
+  margin: 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.btn {
+  border: 0;
+  padding: 0.5rem 1.5rem;
+  background-color: darkslateblue;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 150ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.avatar {
+  font-size: 72px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* utility classes end */
+
+header {
+  background-color: #252525;
+  color: rgb(230, 230, 230);
+  padding: 10px 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.nav-menu {
+  list-style: none;
+}
+
+.nav-link:link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link:visited {
+  color: white;
+}
+
+main {
+  flex: 3;
+  min-height: 300px;
+}
+
+aside {
+  flex: 1;
+  min-height: 200px;
+  align-self: flex-start;
+}

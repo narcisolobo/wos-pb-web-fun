@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yo Store</title>
+  </head>
+  <body>
+    <header class="margin-bottom">
+      <div class="container d-flex">
+        <div class="d-flex">
+          <h1>Yo Store</h1>
+          <nav>
+            <ul class="d-flex nav-menu">
+              <li><a href="#" class="nav-link">Home</a></li>
+              <li><a href="#" class="nav-link">About</a></li>
+              <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="d-flex">
+          <i class="bi bi-basket3-fill"></i>
+          <span id="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="container d-flex">
+      <main>
+        <div class="card margin-bottom">
+          <div class="card-header">
+            <h2>Tokoyami Funko Pop</h2>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              autem molestias consectetur.
+            </p>
+            <button class="btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2>All Might Funko Pop</h2>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              autem molestias consectetur.
+            </p>
+            <button class="btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-person-circle avatar"></i>
+            <h3>fozzie-bear</h3>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

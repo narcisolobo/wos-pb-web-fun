@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Manipulating the DOM, Part III</title>
+  </head>
+  <body>
+    <h1>Manipulating the DOM, Part III</h1>
+
+    <img
+      src="./images/peter-parker.jpg"
+      alt="Peter Parker"
+      onmouseover="changeSpidey(this)" />
+
+    <div class="mb-3">
+      <label for="favorite-hero" class="block">Favorite Hero:</label>
+      <select
+        name="favorite-hero"
+        id="favorite-hero"
+        onchange="alertFavoriteHero(this)">
+        <option value="Spider-Man">Spider-Man</option>
+        <option value="Wonder Woman">Wonder Woman</option>
+        <option value="Batman">Batman</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="block">Email:</label>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        onchange="handleChange(this)" />
+    </div>
+    <button type="button" onclick="alertEmail()">Submit</button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

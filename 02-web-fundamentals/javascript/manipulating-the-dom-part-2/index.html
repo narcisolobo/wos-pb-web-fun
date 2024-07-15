@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulating the DOM, Part 2</title>
+  </head>
+  <body>
+    <h1>Manipulating the DOM, Part 2</h1>
+
+    <p id="intro">An introduction to manipulating the DOM.</p>
+    <button type="button" onclick="changeIntroText()">
+      Change the text above
+    </button>
+
+    <button type="button" onclick="highlightButton(this)">Highlight</button>
+
+    <h2>Rule of Thumb:</h2>
+    <p>
+      <strong>
+        If the element with the listener is also the element you're
+        manipulating, use <code>this</code>. If it is not, use
+        <code>querySelector</code> or <code>getElementById</code>
+      </strong>
+    </p>
+
+    <p>Jinja's Boops: <span id="jinja-count">0</span></p>
+    <button type="button" onclick="incrementBoops('jinja-count')">
+      Boop Jinja
+    </button>
+
+    <p>Feyoncé Boops: <span id="feyoncé-count">0</span></p>
+    <button type="button" onclick="incrementBoops('feyoncé-count')">
+      Boop Feyoncé
+    </button>
+
+    <p>Percy Boops: <span id="percy-count">0</span></p>
+    <button type="button" onclick="incrementBoops('percy-count')">
+      Boop Percy
+    </button>
+
+    <p>Muffin Boops: <span id="muffin-count">0</span></p>
+    <button type="button" onclick="incrementBoops('muffin-count')">
+      Boop Muffin
+    </button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

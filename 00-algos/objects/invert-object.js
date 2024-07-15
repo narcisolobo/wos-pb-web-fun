@@ -9,8 +9,17 @@
   the keys.
 */
 
-const obj1 = { name: 'Zaphod', charm: 'high', morals: 'dicey' };
-const expected1 = { Zaphod: 'name', high: 'charm', dicey: 'morals' };
+const obj1 = {
+  name: 'Zaphod',
+  charm: 'high',
+  morals: 'dicey',
+};
+
+const expected1 = {
+  Zaphod: 'name',
+  high: 'charm',
+  dicey: 'morals',
+};
 
 /**
  * Inverts the given object's key value pairs so that the original values

@@ -2,8 +2,10 @@
   Zip Arrays into Map
   
   Given two arrays, create an associative array (aka hash map,
-  an obj / dictionary) containing keys from the first array,
+  an object / dictionary) containing keys from the first array,
   and values from the second.
+
+  Assume the arrays will always be the same length.
 
   Associative arrays are sometimes called maps because a key
   (string) maps to a value 
@@ -11,6 +13,7 @@
 
 const keys1 = ['abc', 3, 'yo'];
 const vals1 = [42, 'wassup', true];
+
 const expected1 = {
   abc: 42,
   3: 'wassup',
@@ -25,7 +28,7 @@ const expected2 = {};
  * Converts the given arrays of keys and values into an object.
  * - Time: O(?).
  * - Space: O(?).
- * @param {Array<string>} keys
+ * @param {Array<string|number>} keys
  * @param {Array<any>} values
  * @returns {Object} The object with the given keys and values.
  */

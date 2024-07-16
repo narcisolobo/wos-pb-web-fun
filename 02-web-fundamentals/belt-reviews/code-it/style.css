@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+  font-family: 'Balsamiq Sans', sans-serif;
+}
+
+body {
+  background-color: #dddddd;
+}
+
+/* utility classes start */
+
+.container {
+  width: 1028px;
+  margin: 0 auto;
+}
+
+.no-gap-flex {
+  display: flex;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.gap-sm {
+  gap: 0.5rem;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+/* utility classes end */
+
+/* card classes start */
+
+.card {
+  border: 2px solid #999999;
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background-color: #cf2a27;
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* card classes end */
+
+/* header classes start */
+.main-header {
+  padding: 0.5rem 1.5rem;
+}
+
+.brand {
+  /* flex: 1; */
+}
+
+.brand-link {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.logo {
+  width: 36px;
+}
+
+.call-to-action {
+  /* flex: 1; */
+}
+
+.secondary-header {
+  background-color: white;
+  padding: 3rem 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  color: red;
+  text-decoration: underline;
+}
+
+.circle {
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+/* header classes end */
+
+main {
+  flex: 3;
+}
+
+.arrow {
+  width: 36px;
+}
+
+.flipped {
+  transform: rotate(180deg);
+}
+
+.post-image {
+  max-width: 100%;
+  display: block;
+}
+
+.icon {
+  width: 24px;
+}
+
+.text-muted {
+  color: gray;
+}
+
+aside {
+  flex: 2;
+}

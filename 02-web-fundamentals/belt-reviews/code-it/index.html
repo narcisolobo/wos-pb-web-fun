@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CodeIt</title>
+  </head>
+  <body>
+    <!-- headers begin -->
+    <header class="main-header d-flex">
+      <div class="brand d-flex">
+        <img
+          class="logo"
+          src="./images/happy.png"
+          alt="CodeIt Logo - It's a happy cat." />
+        <a href="#" class="brand-link">CodeIt</a>
+        <div class="no-gap-flex">
+          <input type="text" name="search" id="search" class="search" />
+          <button class="btn">Go</button>
+        </div>
+      </div>
+      <div class="call-to-action d-flex">
+        <button class="btn">Get App</button>
+        <button class="btn">Log In</button>
+      </div>
+    </header>
+    <header class="secondary-header">
+      <div class="container d-flex column align-start">
+        <div class="d-flex">
+          <img class="logo circle" src="./images/happy.png" alt="CodeIt Logo" />
+          <h1 class="title">c/Dojo</h1>
+          <button class="btn">Join</button>
+        </div>
+        <div class="d-flex">
+          <nav>
+            <ul class="d-flex nav-links">
+              <li><a href="#" class="active nav-link">Posts</a></li>
+              <li><a href="#" class="nav-link">Wiki</a></li>
+              <li><a href="#" class="nav-link">c/Dojo</a></li>
+              <li><a href="#" class="nav-link">Discord</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- headers end -->
+    <!-- main content begin -->
+    <div class="container d-flex">
+      <main>
+        <div class="card">
+          <div class="card-body d-flex">
+            <div class="up-votes d-flex column gap-sm">
+              <img class="arrow" src="./images/up-arrow.png" alt="up vote" />
+              <span>29</span>
+              <img
+                class="flipped arrow"
+                src="./images/up-arrow.png"
+                alt="down vote" />
+            </div>
+            <div class="post-content">
+              <h2>Best of Project Week 2022!</h2>
+              <img
+                class="post-image"
+                src="./images/project-week.jpg"
+                alt="Best of Project Week 2022!" />
+              <div class="d-flex justify-start gap-sm">
+                <img
+                  src="./images/comment.png"
+                  alt="Comment on this post"
+                  class="icon" />
+                <span class="text-muted">42 comments</span>
+                <img
+                  src="./images/share.png"
+                  alt="Share this post"
+                  class="icon" />
+                <span class="text-muted">Share</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body d-flex">
+            <div class="up-votes d-flex column gap-sm">
+              <img class="arrow" src="./images/up-arrow.png" alt="up vote" />
+              <span>29</span>
+              <img
+                class="flipped arrow"
+                src="./images/up-arrow.png"
+                alt="down vote" />
+            </div>
+            <div class="post-content">
+              <h2>I use my cat as a rubber duck, is that weird?</h2>
+              <img
+                class="post-image"
+                src="./images/cat-2.jpg"
+                alt="I use my cat as a rubber duck, is that weird?" />
+              <div class="d-flex justify-start gap-sm">
+                <img
+                  src="./images/comment.png"
+                  alt="Comment on this post"
+                  class="icon" />
+                <span class="text-muted">16 comments</span>
+                <img
+                  src="./images/share.png"
+                  alt="Share this post"
+                  class="icon" />
+                <span class="text-muted">Share</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside></aside>
+    </div>
+    <!-- main content end -->
+  </body>
+</html>

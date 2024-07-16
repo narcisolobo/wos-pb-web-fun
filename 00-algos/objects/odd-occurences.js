@@ -19,7 +19,21 @@ const nums4 = [5, 2, 6, 2, 3, 1, 6, 3, 2, 5, 2];
 const expected4 = 1;
 
 function oddOccurrencesInArray(nums) {
-  // your code here
+  const freqTable = {};
+
+  for (const item of nums) {
+    if (freqTable.hasOwnProperty(item)) {
+      freqTable[item]++;
+    } else {
+      freqTable[item] = 1;
+    }
+  }
+
+  for (const key in freqTable) {
+    if (freqTable[key] % 2 !== 0) {
+      return key;
+    }
+  }
 }
 
 console.log(oddOccurrencesInArray(nums1), 'should equal', expected1);

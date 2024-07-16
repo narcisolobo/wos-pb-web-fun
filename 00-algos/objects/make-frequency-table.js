@@ -29,5 +29,19 @@ const expected3 = {};
  *    from the given arr and the values are the amnt of times that item occurs.
  */
 function makeFrequencyTable(arr) {
-  // your code here
+  const freqTable = {};
+
+  for (const item of arr) {
+    if (freqTable.hasOwnProperty(item)) {
+      freqTable[item]++;
+    } else {
+      freqTable[item] = 1;
+    }
+  }
+
+  return freqTable;
 }
+
+console.log(makeFrequencyTable(arr1));
+console.log(makeFrequencyTable(arr2));
+console.log(makeFrequencyTable(arr3));

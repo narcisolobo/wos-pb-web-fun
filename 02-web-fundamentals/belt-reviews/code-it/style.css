@@ -42,6 +42,60 @@ body {
   justify-content: flex-start;
 }
 
+.btn {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+.bg-orange {
+  background-color: #ff9901;
+}
+
+.bg-blue {
+  background-color: #2b79e4;
+}
+
+.bg-red {
+  background-color: #cf2a27;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.border-none {
+  border: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-white {
+  color: white;
+}
+
+.box-shadow {
+  box-shadow: 3px 3px black;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+h2.margin-bottom,
+img.margin-bottom {
+  margin-bottom: 0.5rem;
+}
+
 /* utility classes end */
 
 /* card classes start */
@@ -59,7 +113,7 @@ body {
 }
 
 .card-body {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 /* card classes end */
@@ -67,10 +121,12 @@ body {
 /* header classes start */
 .main-header {
   padding: 0.5rem 1.5rem;
+  border-bottom: 2px solid black;
 }
 
-.brand {
-  /* flex: 1; */
+.search {
+  border: 2px solid black;
+  padding: 0.5rem;
 }
 
 .brand-link {
@@ -82,10 +138,6 @@ body {
 
 .logo {
   width: 36px;
-}
-
-.call-to-action {
-  /* flex: 1; */
 }
 
 .secondary-header {
@@ -122,6 +174,15 @@ main {
   flex: 3;
 }
 
+.title,
+.card-title {
+  margin: 0;
+}
+
+.up-votes {
+  align-self: flex-start;
+}
+
 .arrow {
   width: 36px;
 }
@@ -145,4 +206,5 @@ main {
 
 aside {
   flex: 2;
+  align-self: flex-start;
 }

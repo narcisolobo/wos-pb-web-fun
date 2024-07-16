@@ -17,13 +17,22 @@
           alt="CodeIt Logo - It's a happy cat." />
         <a href="#" class="brand-link">CodeIt</a>
         <div class="no-gap-flex">
-          <input type="text" name="search" id="search" class="search" />
-          <button class="btn">Go</button>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="search"
+            placeholder="search" />
+          <button
+            class="btn border bg-orange box-shadow"
+            onclick="alertSearch()">
+            Go
+          </button>
         </div>
       </div>
       <div class="call-to-action d-flex">
-        <button class="btn">Get App</button>
-        <button class="btn">Log In</button>
+        <button class="btn rounded bg-blue text-white">Get App</button>
+        <button class="btn rounded bg-orange">Log In</button>
       </div>
     </header>
     <header class="secondary-header">
@@ -31,7 +40,11 @@
         <div class="d-flex">
           <img class="logo circle" src="./images/happy.png" alt="CodeIt Logo" />
           <h1 class="title">c/Dojo</h1>
-          <button class="btn">Join</button>
+          <button
+            class="btn bg-red rounded text-white border-none"
+            onclick="hide(this)">
+            Join
+          </button>
         </div>
         <div class="d-flex">
           <nav>
@@ -52,17 +65,21 @@
         <div class="card">
           <div class="card-body d-flex">
             <div class="up-votes d-flex column gap-sm">
-              <img class="arrow" src="./images/up-arrow.png" alt="up vote" />
-              <span>29</span>
+              <img
+                class="arrow"
+                src="./images/up-arrow.png"
+                alt="up vote"
+                onclick="addingUp('project-week-count')" />
+              <span id="project-week-count">29</span>
               <img
                 class="flipped arrow"
                 src="./images/up-arrow.png"
                 alt="down vote" />
             </div>
             <div class="post-content">
-              <h2>Best of Project Week 2022!</h2>
+              <h2 class="title margin-bottom">Best of Project Week 2022!</h2>
               <img
-                class="post-image"
+                class="post-image margin-bottom"
                 src="./images/project-week.jpg"
                 alt="Best of Project Week 2022!" />
               <div class="d-flex justify-start gap-sm">
@@ -83,17 +100,23 @@
         <div class="card">
           <div class="card-body d-flex">
             <div class="up-votes d-flex column gap-sm">
-              <img class="arrow" src="./images/up-arrow.png" alt="up vote" />
-              <span>29</span>
+              <img
+                class="arrow"
+                src="./images/up-arrow.png"
+                alt="up vote"
+                onclick="addingUp('cat-duck')" />
+              <span id="cat-duck">17</span>
               <img
                 class="flipped arrow"
                 src="./images/up-arrow.png"
                 alt="down vote" />
             </div>
             <div class="post-content">
-              <h2>I use my cat as a rubber duck, is that weird?</h2>
+              <h2 class="title margin-bottom">
+                I use my cat as a rubber duck, is that weird?
+              </h2>
               <img
-                class="post-image"
+                class="post-image margin-bottom"
                 src="./images/cat-2.jpg"
                 alt="I use my cat as a rubber duck, is that weird?" />
               <div class="d-flex justify-start gap-sm">
@@ -112,8 +135,44 @@
           </div>
         </div>
       </main>
-      <aside></aside>
+      <aside>
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">About the Dojo</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Changing lives with code and a dedicated community of debuggers!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Discord</h3>
+          </div>
+          <div class="card-body">
+            <button class="btn w-100 rounded bg-white" type="button">
+              discord.gg/cdojo
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">c/Dojo Rules</h3>
+          </div>
+          <div class="card-body">
+            <ol>
+              <li>Follow the 20 Minute Rule!</li>
+              <li>Don't compare yourself to others!</li>
+              <li>Learn Actively</li>
+              <li>Don't chase best practices (yet)</li>
+              <li>When you're behind, ask for help!</li>
+            </ol>
+          </div>
+        </div>
+      </aside>
     </div>
     <!-- main content end -->
+    <script src="./script.js"></script>
   </body>
 </html>

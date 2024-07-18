@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
 
 :root {
-  --transparent-black: rgba(0, 0, 0, 0.05);
   --transparent-white: rgba(255, 255, 255, 0.45);
   --transparent-border: 1px solid rgba(255, 255, 255, 0.25);
   --box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.25);
@@ -11,7 +10,7 @@
 
 body {
   color: rgb(25, 25, 25);
-  font-family: 'Open Sans', sans-serif;
+  font-family: system-ui, 'Open Sans', sans-serif;
   background-image: url('./images/stacked-waves-haikei.svg');
   background-position: center;
   background-size: cover;
@@ -62,10 +61,6 @@ a:active {
   border-bottom: var(--transparent-border);
   box-shadow: var(--box-shadow);
   backdrop-filter: var(--backdrop-blur);
-}
-
-.dark {
-  background-color: var(--transparent-black);
 }
 
 .light {

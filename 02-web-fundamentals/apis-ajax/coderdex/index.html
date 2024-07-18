@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CoderDex</title>
+  </head>
+  <body>
+    <nav class="glass light">
+      <div class="flex container">
+        <span class="brand">coder-dex</span>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="card glass light mb">
+        <div class="card-body">
+          <form id="username-form">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="enter username" />
+            <div class="flex flex-end">
+              <button type="submit" class="btn" onclick="getCoder()">
+                FIND CODER
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="grid" id="card-container"></div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

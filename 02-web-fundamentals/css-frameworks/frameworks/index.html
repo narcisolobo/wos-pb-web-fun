@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Frameworks</title>
+  </head>
+  <body>
+    <h1>CSS Frameworks</h1>
+    <section>
+      <h2>Types of CSS Frameworks</h2>
+      <article>
+        <h3>Classless / Minimalist:</h3>
+        <h4>Learning curve: Low, CSS file size: Light</h4>
+        <ul>
+          <li>
+            <a href="https://oxal.org/projects/sakura/">Sakura</a>
+          </li>
+          <li>
+            <a href="https://picocss.com/">Pico.css</a>
+          </li>
+          <li>
+            <a href="https://milligram.io/">Milligram</a>
+          </li>
+          <li>
+            <a href="http://getskeleton.com/">Skeleton</a>
+          </li>
+          <li>
+            <a href="https://purecss.io/">Pure.css</a>
+          </li>
+        </ul>
+        <p>
+          These frameworks offer a minimal set of styles and components,
+          focusing on simplicity and flexibility. They provide a starting point
+          for customization rather than a complete UI solution.
+        </p>
+        <p>
+          If you're concerned about page load times and performance, a
+          lightweight framework can be beneficial. These frameworks typically
+          have smaller file sizes and fewer dependencies, resulting in faster
+          loading times for your web pages. They focus on essential styles and
+          components, minimizing the impact on performance.
+        </p>
+        <p>
+          Project Prototyping: When building a quick prototype or proof of
+          concept, a lightweight framework can help you get started rapidly. Its
+          minimalistic approach allows you to set up a basic structure and
+          layout quickly, allowing you to focus more on the core functionality
+          or design aspects of your project.
+        </p>
+        <p>Example button:</p>
+        <img src="./images/button-classless.png" alt="classless button" />
+      </article>
+      <article>
+        <h3>Utility-First / Atomic:</h3>
+        <h4>
+          Learning curve: High, CSS file size: Light (if configured with
+          postcss/purgecss)
+        </h4>
+        <ul>
+          <li>
+            <a href="https://tailwindcss.com/">Tailwind</a>
+          </li>
+          <li>
+            <a href="https://tachyons.io/">Tachyons</a>
+          </li>
+          <li>
+            <a href="https://basscss.com/">Basscss</a>
+          </li>
+        </ul>
+        <p>
+          Atomic CSS libraries follow a modular approach, where styles are
+          broken down into small, single-purpose utility classes. These classes
+          represent individual styling properties, such as margin, padding,
+          typography, colors, and positioning. The primary advantage of atomic
+          CSS is that it allows for highly modular and reusable styles. This
+          approach is beneficial when you want to create a large number of
+          consistent and reusable styles across your project.
+        </p>
+        <p>
+          If you are building a custom design system for your project, an atomic
+          CSS library can be a valuable tool. Atomic classes provide a shared
+          language for defining and applying styles across your design system,
+          ensuring visual consistency and ease of maintenance. It allows you to
+          create a cohesive set of reusable styles that can be used consistently
+          throughout your project.
+        </p>
+        <p>
+          Atomic CSS libraries offer a standardized set of utility classes that
+          can be easily understood and adopted by a development team. This
+          promotes consistency in styling and facilitates collaboration among
+          team members, as they can quickly grasp and apply the atomic classes
+          without extensive knowledge of CSS.
+        </p>
+        <p>
+          Atomic CSS libraries excel in rapid prototyping scenarios. Since
+          atomic classes are focused on specific styling properties, you can
+          quickly assemble and apply them to elements without the need to write
+          custom CSS rules. This speeds up the prototyping process, allowing you
+          to iterate and experiment with different styles and layouts easily.
+        </p>
+        <p>Example button:</p>
+        <img src="./images/button-atomic.png" alt="Atomic Button" />
+      </article>
+      <article>
+        <h3>Comprehensive / General Purpose:</h3>
+        <h4>
+          Learning curve: Mid, CSS file size: Mid-to-heavy, but can be light if
+          configured with postcss/purgecss
+        </h4>
+        <ul>
+          <li>
+            <a href="https://getbootstrap.com/">Bootstrap</a>
+          </li>
+          <li>
+            <a href="https://bulma.io/">Bulma</a>
+          </li>
+          <li>
+            <a href="https://get.foundation/">Foundation</a>
+          </li>
+        </ul>
+        <p>
+          These frameworks provide a wide range of pre-designed components,
+          layouts, and utility classes for building complete websites or web
+          applications. They often include CSS, JavaScript, and sometimes
+          additional tools for tasks like responsive design and cross-browser
+          compatibility.
+        </p>
+        <p>
+          If you want to maintain a consistent design language and user
+          experience throughout your project, a comprehensive framework can be
+          beneficial. They often come with a unified set of styles, components,
+          and design patterns, ensuring a cohesive look and feel across
+          different pages and sections of your website.
+        </p>
+        <p>
+          Comprehensive frameworks typically have built-in support for
+          responsive design. They offer responsive grids, responsive navigation
+          menus, and responsive utilities that make it easier to create websites
+          that adapt to different screen sizes and devices. If your project
+          requires a mobile-friendly and responsive layout, these frameworks can
+          save you time and effort.
+        </p>
+        <p>
+          If you need to quickly prototype a concept or create a minimum viable
+          product (MVP), a comprehensive framework can provide a solid
+          foundation. The pre-built components and layouts allow you to rapidly
+          assemble the necessary features and test your idea without spending
+          excessive time on styling and design.
+        </p>
+        <p>Example button:</p>
+        <img
+          src="./images/button-comprehensive.png"
+          alt="Comprehensive Button" />
+      </article>
+    </section>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Occupation</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kermit</td>
+          <td>Host</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>Piggy</td>
+          <td>Diva</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>Fozzie</td>
+          <td>Standup</td>
+          <td>41</td>
+        </tr>
+      </tbody>
+    </table>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="firstName" />
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" id="lastName" />
+      <button>SUBMIT</button>
+    </form>
+  </body>
+</html>

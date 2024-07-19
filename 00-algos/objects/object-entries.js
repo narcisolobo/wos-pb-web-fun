@@ -8,6 +8,7 @@
   Do not include key value pairs from the given
   objects prototype (these are included by default
   when looping over an object's keys)
+  obj.hasOwnProperty(key)
 */
 
 const obj1 = {

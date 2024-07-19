@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/vapor.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >My Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find Connections</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary ms-auto">
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section class="container py-3">
+      <div class="row">
+        <main class="col-12 col-lg-8">
+          <div class="card shadow mb-3">
+            <div class="card-header bg-primary p-5">
+              <img
+                src="./images/jane-m.jpg"
+                alt="Jane Doe"
+                class="rounded-circle border border-5 border-white position-absolute profile-avatar" />
+            </div>
+            <div class="card-body really-large-top-padding">
+              <h2 class="card-title">Jane Doe</h2>
+              <p class="card-text fs-5">
+                <i class="bi bi-geo-alt-fill"></i> Seattle
+              </p>
+              <p class="mb-0">Developer | Engineer | Problem Solver</p>
+              <p class="card-text">Master of Shadows and the Interwebs!</p>
+              <p class="card-text">
+                <i class="bi bi-gear-fill text-primary"></i>
+                <a href="#">edit profile</a>
+              </p>
+            </div>
+          </div>
+          <div class="card shadow mb-3">
+            <h3 class="mb-0 card-header bg-dark text-light">Education</h3>
+            <div class="card-body">
+              <h3 class="card-title">Coding Dojo - Full Stack Bootcamp</h3>
+              <p class="card-text text-muted">Dec 2019 - Mar 2020</p>
+              <p class="card-text">
+                Triple black belt in Python, MERN, and C#...
+              </p>
+            </div>
+          </div>
+        </main>
+        <aside class="col-12 col-lg-4">
+          <div class="card shadow mb-3">
+            <h4 class="mb-0 card-header bg-dark text-light position-relative">
+              Connection Requests
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                2
+                <span class="visually-hidden">connection requests</span>
+              </span>
+            </h4>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex justify-content-between align-items-center gap-2">
+                  <img
+                    src="./images/todd-s.jpg"
+                    alt="Todd"
+                    class="rounded-circle avatar" />
+                  <p class="mb-0 fw-bold">Todd S.</p>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center fs-1 gap-2">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <i class="bi bi-x-circle-fill"></i>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex justify-content-between align-items-center gap-2">
+                  <img
+                    src="./images/phil-s.jpg"
+                    alt="Todd"
+                    class="rounded-circle avatar" />
+                  <p class="mb-0 fw-bold">Phil N.</p>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center fs-1 gap-2">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <i class="bi bi-x-circle-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow mb-3">
+            <h4 class="mb-0 card-header bg-dark text-light position-relative">
+              Your Connections
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                500+
+                <span class="visually-hidden">your connections</span>
+              </span>
+            </h4>
+            <div class="card-body">
+              <div
+                class="d-flex justify-content-start align-items-center gap-2 mb-3">
+                <img
+                  src="./images/adrien-s.jpg"
+                  alt="Todd"
+                  class="rounded-circle avatar" />
+                <p class="mb-0 fw-bold">Adrien D.</p>
+              </div>
+              <div
+                class="d-flex justify-content-start align-items-center gap-2 mb-3">
+                <img
+                  src="./images/anne-s.jpg"
+                  alt="Todd"
+                  class="rounded-circle avatar" />
+                <p class="mb-0 fw-bold">Anne J.</p>
+              </div>
+              <div
+                class="d-flex justify-content-start align-items-center gap-2 mb-3">
+                <img
+                  src="./images/alayne-s.jpg"
+                  alt="Todd"
+                  class="rounded-circle avatar" />
+                <p class="mb-0 fw-bold">Alayne S.</p>
+              </div>
+              <div
+                class="d-flex justify-content-start align-items-center gap-2">
+                <img
+                  src="./images/arry-s.jpg"
+                  alt="Todd"
+                  class="rounded-circle avatar" />
+                <p class="mb-0 fw-bold">Arry Y.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
